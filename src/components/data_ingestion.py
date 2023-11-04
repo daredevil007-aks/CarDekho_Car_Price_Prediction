@@ -10,7 +10,7 @@ from dataclasses import dataclass
 @dataclass
 class DataIngestionConfig:
     train_data_path:str=os.path.join('artifacts','train.csv')
-    test_data_path:str=os.apth.join('artifacts','test.csv')
+    test_data_path:str=os.path.join('artifacts','test.csv')
     raw_data_path:str=os.path.join('artifacts','raw.csv')
 
 class DataIngestion:
@@ -22,6 +22,15 @@ class DataIngestion:
         try:
             df = pd.read_csv(os.path.join('Data','cardekho.csv'))
             logging.info('Dataset read as pandas Dataframe')
+            df= df.drop('torque',axis=1)
+            df['max_power'] = df['max_power'].str.replace(' bhp','')
+            df['max_power'] = pd.to_numeric(df['max_power'], errors='coerce')
+            df['engine']= df['engine'].str.replace(' CC','')
+            df['engine'] = pd.to_numeric(df['engine'], errors='coerce')
+            df['mileage'] = df['mileage'].str.replace(' kmpl','')
+            df['mileage'] = df['mileage'].str.replace(' km/kg','')
+            df['mileage'] = pd.to_numeric(df['mileage'], errors='coerce')
+            df = df.dropna()
 
             df = df.drop(['name'], axis=1)
             logging.info('EDA Completed performing ingestion')
@@ -45,3 +54,7 @@ class DataIngestion:
             logging.info('Exception occured at data ingestion stage')
             raise CustomException(e, sys)
 
+
+if __name__ == '__main__':
+    obj=DataIngestion()
+    train_data,test_data=obj.initiate_data_ingestion()
