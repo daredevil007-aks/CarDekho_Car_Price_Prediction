@@ -1,21 +1,21 @@
-year,selling_price,km_driven,fuel,seller_type,transmission,owner,mileage,engine,max_power,torque,seats
-2010,165000,56000,Petrol,Individual,Manual,Third Owner,17.92 kmpl,1086 CC,62.1 bhp,96.1Nm@ 3000rpm,5.0
-2015,240000,80000,Petrol,Individual,Manual,Second Owner,23.95 kmpl,998 CC,67.05 bhp,90Nm@ 3500rpm,5.0
-2018,335000,30000,Petrol,Individual,Manual,First Owner,25.17 kmpl,799 CC,53.3 bhp,72Nm@ 4386rpm,5.0
-2018,950000,27620,Diesel,Dealer,Manual,First Owner,22.77 kmpl,1498 CC,98.59 bhp,205Nm@ 1750-3250rpm,5.0
-2011,200000,120000,Diesel,Individual,Manual,First Owner,14.0 kmpl,2489 CC,95 bhp,220Nm at 1400-2600 rpm,8.0
-2009,120000,70000,Petrol,Individual,Manual,Second Owner,13.2 kmpl,1495 CC,94 bhp,"12.5@ 3,500(kgm@ rpm)",5.0
-2011,229999,18500,Petrol,Individual,Manual,First Owner,18.5 kmpl,1197 CC,85.80 bhp,114Nm@ 4000rpm,5.0
-2019,650000,33000,Petrol,Individual,Automatic,First Owner,21.21 kmpl,1197 CC,81.80 bhp,113Nm@ 4200rpm,5.0
-2019,1250000,15000,Diesel,Individual,Manual,First Owner,17.6 kmpl,2179 CC,147.94 bhp,320Nm@ 1500-3000rpm,7.0
-2007,220000,136000,Petrol,Individual,Manual,Second Owner,16.1 kmpl,1298 CC,88.2 bhp,"11.5@ 4,500(kgm@ rpm)",5.0
-2018,5500000,22000,Diesel,Individual,Automatic,First Owner,17.09 kmpl,2993 CC,261.4 bhp,620Nm@ 2000-2500rpm,4.0
-2016,1350000,25000,Diesel,Individual,Manual,First Owner,16.0 kmpl,2179 CC,140 bhp,330Nm@ 1600-2800rpm,7.0
-2011,430000,80000,Diesel,Individual,Automatic,Second Owner,18.1 kmpl,1991 CC,147.9 bhp,327Nm@ 2600rpm,4.0
-2016,640000,70000,Diesel,Individual,Manual,First Owner,24.3 kmpl,1248 CC,88.5 bhp,200Nm@ 1750rpm,5.0
-2019,5150000,20000,Petrol,Dealer,Automatic,First Owner,22.37 kmpl,2487 CC,214.56 bhp,202Nm@ 3600-5200rpm,5.0
-2017,693000,58559,Diesel,Dealer,Manual,First Owner,25.2 kmpl,1248 CC,74 bhp,190Nm@ 2000rpm,5.0
-2012,320000,193000,Diesel,Individual,Manual,First Owner,19.3 kmpl,1248 CC,73.9 bhp,190Nm@ 2000rpm,5.0
-2016,700000,86000,Diesel,Individual,Manual,First Owner,24.3 kmpl,1248 CC,88.5 bhp,200Nm@ 1750rpm,5.0
-2016,650000,81000,Diesel,Dealer,Manual,Second Owner,28.09 kmpl,1248 CC,88.5 bhp,200Nm@ 1750rpm,5.0
-2017,550000,20000,Petrol,Individual,Manual,First Owner,18.9 kmpl,1197 CC,82 bhp,114Nm@ 4000rpm,5.0
+year,selling_price,km_driven,fuel,seller_type,transmission,owner,mileage,engine,max_power,seats
+2015,535000,80000,Diesel,Individual,Manual,First Owner,22.54,1396.0,88.73,5.0
+2010,300000,120000,Diesel,Individual,Manual,Third Owner,18.8,1248.0,90.0,5.0
+2010,200000,190000,Diesel,Individual,Manual,Second Owner,17.8,1248.0,75.0,5.0
+2017,450000,56290,Diesel,Dealer,Manual,First Owner,24.0,1186.0,73.97,5.0
+2017,4100000,17000,Petrol,Individual,Automatic,First Owner,9.5,3604.0,280.0,5.0
+2019,892000,10000,Diesel,Individual,Manual,First Owner,24.3,1248.0,88.5,5.0
+2009,60000,110000,Petrol,Individual,Manual,Third Owner,16.5,995.0,63.0,5.0
+2005,45000,55425,Petrol,Individual,Manual,Second Owner,16.1,796.0,37.0,4.0
+2013,170000,162500,Diesel,Individual,Manual,First Owner,19.4,1405.0,70.0,5.0
+2009,120000,90000,Petrol,Individual,Manual,First Owner,19.7,796.0,46.3,5.0
+2019,1700000,32000,Diesel,Individual,Manual,First Owner,15.1,2179.0,155.0,7.0
+2010,200000,65000,Petrol,Individual,Manual,First Owner,18.9,1061.0,67.0,5.0
+2015,500000,150546,Petrol,Dealer,Manual,First Owner,22.0,1197.0,81.8,5.0
+2012,45000,28000,Petrol,Individual,Manual,Second Owner,25.4,624.0,37.5,4.0
+2009,160000,35000,Petrol,Individual,Manual,Third Owner,19.81,1086.0,68.05,5.0
+2017,625000,25000,Petrol,Individual,Manual,First Owner,22.0,1197.0,81.8,5.0
+2010,250000,48000,Petrol,Individual,Manual,First Owner,15.6,1196.0,70.0,5.0
+2013,200000,169000,Diesel,Individual,Manual,First Owner,20.0,1399.0,68.1,5.0
+2006,300000,140000,Diesel,Individual,Manual,Second Owner,12.8,2494.0,102.0,8.0
+2014,525000,78000,Diesel,Dealer,Manual,Second Owner,15.05,2179.0,147.9,7.0

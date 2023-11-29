@@ -1,0 +1,24 @@
+[ 2023-11-24 14:05:44,324 ] 22 root - INFO - data ingestion methods starts
+[ 2023-11-24 14:05:44,370 ] 25 root - INFO - Dataset read as pandas Dataframe
+[ 2023-11-24 14:05:44,464 ] 37 root - INFO - EDA Completed performing ingestion
+[ 2023-11-24 14:05:44,561 ] 41 root - INFO - Train test split
+[ 2023-11-24 14:05:44,670 ] 48 root - INFO - Ingestion of data completed
+[ 2023-11-24 14:05:44,712 ] 77 root - INFO - Read train and test data completed
+[ 2023-11-24 14:05:44,735 ] 78 root - INFO - Train Dataframe Head : 
+   year  selling_price  km_driven    fuel seller_type transmission         owner  mileage  engine  max_power  seats
+0  2017         750000      50000  Diesel  Individual       Manual   First Owner    24.52  1248.0       88.5    7.0
+1  2018        1000000      70000  Diesel  Individual       Manual   First Owner    25.10  1248.0       88.5    5.0
+2  2012         550000     130000  Diesel  Individual       Manual   First Owner    15.10  2179.0      140.0    7.0
+3  2012         675000     120000  Diesel  Individual       Manual  Second Owner    15.10  2179.0      140.0    7.0
+4  2014        1380000     150000  Diesel  Individual       Manual   First Owner    13.00  2982.0      168.5    7.0
+[ 2023-11-24 14:05:44,768 ] 79 root - INFO - Test Dataframe Head  : 
+   year  selling_price  km_driven    fuel seller_type transmission                 owner  mileage  engine  max_power  seats
+0  2007         350000      90000  Petrol  Individual    Automatic           First Owner    12.90  1799.0      130.0    5.0
+1  2009         525000     217000  Diesel  Individual       Manual  Fourth & Above Owner    12.80  2494.0      102.0    8.0
+2  2017        4100000      17000  Petrol  Individual    Automatic           First Owner     9.50  3604.0      280.0    5.0
+3  2009         250000     146000  Diesel  Individual       Manual          Second Owner    13.93  2179.0      138.0    7.0
+4  2014         500000      90000  Diesel  Individual       Manual          Second Owner    15.05  2179.0      147.9    7.0
+[ 2023-11-24 14:05:44,768 ] 81 root - INFO - Obtaining preprocessing object
+[ 2023-11-24 14:05:44,768 ] 26 root - INFO - Data Transformation initiated
+[ 2023-11-24 14:05:44,768 ] 36 root - INFO - Pipeline Initiated
+[ 2023-11-24 14:05:44,768 ] 119 root - INFO - Exception occured in the initiate_datatransformation

@@ -1,0 +1,24 @@
+[ 2023-11-26 12:47:45,553 ] 22 root - INFO - data ingestion methods starts
+[ 2023-11-26 12:47:45,589 ] 25 root - INFO - Dataset read as pandas Dataframe
+[ 2023-11-26 12:47:45,647 ] 37 root - INFO - EDA Completed performing ingestion
+[ 2023-11-26 12:47:45,708 ] 41 root - INFO - Train test split
+[ 2023-11-26 12:47:45,772 ] 48 root - INFO - Ingestion of data completed
+[ 2023-11-26 12:47:45,812 ] 77 root - INFO - Read train and test data completed
+[ 2023-11-26 12:47:45,820 ] 78 root - INFO - Train Dataframe Head : 
+   year  selling_price  km_driven    fuel seller_type transmission                 owner  mileage  engine  max_power  seats
+0  2016         850000      58000  Diesel  Individual       Manual           First Owner    19.67  1582.0      126.2    5.0
+1  2004          75000      46000  Petrol  Individual       Manual  Fourth & Above Owner    16.10   796.0       37.0    4.0
+2  2007         229999     120000  Diesel  Individual       Manual           Third Owner    10.50  2609.0      120.0    7.0
+3  2017         310000      35000  Petrol  Individual       Manual           First Owner    24.70   796.0       47.3    5.0
+4  2012         100000      51000  Petrol  Individual       Manual           First Owner    16.10   796.0       37.0    4.0
+[ 2023-11-26 12:47:45,824 ] 79 root - INFO - Test Dataframe Head  : 
+   year  selling_price  km_driven    fuel       seller_type transmission         owner  mileage  engine  max_power  seats
+0  2016         550000      56494  Petrol  Trustmark Dealer       Manual   First Owner    18.20  1199.0      88.70    5.0
+1  2018         775000      80000  Diesel        Individual       Manual   First Owner    22.95  1248.0      74.00    5.0
+2  2019        1145000      20000  Diesel        Individual       Manual   First Owner    23.00  1498.0      98.96    5.0
+3  2006         300000     140000  Diesel        Individual       Manual  Second Owner    12.80  2494.0     102.00    8.0
+4  2013          80000      30000  Petrol        Individual       Manual   First Owner    25.40   624.0      37.48    4.0
+[ 2023-11-26 12:47:45,824 ] 81 root - INFO - Obtaining preprocessing object
+[ 2023-11-26 12:47:45,824 ] 26 root - INFO - Data Transformation initiated
+[ 2023-11-26 12:47:45,825 ] 36 root - INFO - Pipeline Initiated
+[ 2023-11-26 12:47:45,825 ] 119 root - INFO - Exception occured in the initiate_datatransformation
