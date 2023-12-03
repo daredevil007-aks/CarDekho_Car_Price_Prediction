@@ -1,0 +1,78 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="year">year:</label>
+        <input type="text" id="year" name="year" placeholder="Year of car launch">
+    </div>
+
+    <div class="form-group">
+        <label for="km_driven">km_driven:</label>
+        <input type="text" id="km_driven" name="km_driven" placeholder="Enter Total Car driven in KM">
+    </div>
+
+    <div class="form-group">  
+        <label for="mileage">mileage:</label>
+        <input type="text" id="mileage" name="mileage" placeholder="Enter mileage">
+    </div>  
+
+    <div class="form-group">  
+        <label for="engine">engine:</label>
+        <input type="text" id="engine" name="engine" placeholder="engine">
+    </div>          
+    
+    <div class="form-group">  
+        <label for="max_power">max_power:</label>
+        <input type="text" id="max_power" name="max_power" placeholder="max_power">
+    </div>          
+
+    <div class="form-group">  
+        <label for="seats">seats:</label>
+        <input type="text" id="seats" name="seats" placeholder="seats">
+    </div>          
+  
+  
+<div class="form-group">
+  <label for="fuel">fuel:</label>
+  <select id="fuel" name="fuel">
+    <option value="Diesel">Diesel</option>         
+    <option value="Petrol">Petrol</option>
+    <option value="LPG">LPG</option>
+    <option value="CNG">CNG</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="seller_type">seller_type:</label>      
+  <select id="seller_type" name="seller_type">
+    <option value="Individual">Individual</option>
+    <option value="Dealer">Dealer</option>
+    <option value="Trustmark Dealer">Trustmark Dealer</option>
+  </select>
+</div>
+
+<div class="form-group">                               
+  <label for="transmission">transmission:</label>
+  <select id="transmission" name="transmission">
+    <option value="Manual">Manual</option>
+    <option value="Automatic">Automatic</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="owner">owner:</label>      
+    <select id="owner" name="owner">
+      <option value="First Owner">First Owner</option>
+      <option value="Second Owner">Second Owner</option>
+      <option value="Third Owner">Third Owner</option>
+      <option value="Fourth & Above Owner">Fourth & Above Owner</option>
+      <option value="Test Drive Car">Test Drive Car</option>
+    </select>
+</div>
+
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

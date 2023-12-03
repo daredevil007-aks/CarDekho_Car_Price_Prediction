@@ -108,5 +108,5 @@ class DataTransformation:
            
         except Exception as e:
             logging.info("Exception ocured in the initite data_transformation")
-
+   
             raise CustomException(e, sys)

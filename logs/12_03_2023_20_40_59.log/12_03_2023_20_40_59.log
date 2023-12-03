@@ -1,0 +1,11 @@
+[ 2023-12-03 20:41:01,547 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.160:5000
+[ 2023-12-03 20:41:01,547 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-12-03 20:41:06,185 ] 96 werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 20:41:06] "GET /predict HTTP/1.1" 200 -
+[ 2023-12-03 20:41:19,218 ] 68 root - INFO - DataFrame Gathered
+[ 2023-12-03 20:41:19,226 ] 69 root - INFO - Dataframe Head: 
+     year  km_driven  mileage  engine  max_power  seats    fuel seller_type transmission        owner
+0  2016.0    80000.0     22.0  1400.0       90.0    5.0  Diesel  Individual       Manual  First Owner
+[ 2023-12-03 20:41:19,752 ] 96 werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 20:41:19] "POST /predict HTTP/1.1" 200 -

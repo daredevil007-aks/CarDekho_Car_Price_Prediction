@@ -3,8 +3,3 @@ Name: Car-Price-prediction
 Version: 0.0.2
 Author: akshat
 Author-email: chourasiaakshat2@gmail.com
-Requires-Dist: pandas
-Requires-Dist: seaborn
-Requires-Dist: plotly
-Requires-Dist: numpy
-Requires-Dist: scikit-learn

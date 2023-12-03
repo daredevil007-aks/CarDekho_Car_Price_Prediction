@@ -1,0 +1,52 @@
+[ 2023-12-03 00:19:09,151 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.160:5000
+[ 2023-12-03 00:19:09,151 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-12-03 00:19:13,806 ] 96 werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 00:19:13] "GET /predict HTTP/1.1" 200 -
+[ 2023-12-03 00:19:26,162 ] 68 root - INFO - DataFrame Gathered
+[ 2023-12-03 00:19:26,215 ] 69 root - INFO - train Dataframe Head: 
+     year  km_driven  mileage  engine  max_power  seats    fuel seller_type transmission        owner
+0  2016.0    80000.0     22.0  1400.0       90.0    5.0  Diesel  Individual       Manual  First Owner
+[ 2023-12-03 00:19:26,492 ] 47 root - INFO - Exception Occured in load_object function
+[ 2023-12-03 00:19:26,492 ] 27 root - INFO - exception occured in prediction
+[ 2023-12-03 00:19:26,492 ] 825 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "E:\ML\CarDekho_Car_Price_Prediction\src\utils.py", line 44, in load_object
+    return pickle.load(file_obj)
+  File "sklearn\tree\_tree.pyx", line 714, in sklearn.tree._tree.Tree.__setstate__
+  File "sklearn\tree\_tree.pyx", line 1418, in sklearn.tree._tree._check_node_ndarray
+ValueError: node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML\CarDekho_Car_Price_Prediction\src\pipeline\prediction_pipeline.py", line 19, in predict
+    model=load_object(model_path)
+  File "E:\ML\CarDekho_Car_Price_Prediction\src\utils.py", line 48, in load_object
+    raise CustomException(e, sys)
+src.exception.CustomException:  Error occured in python script name[E:\ML\CarDekho_Car_Price_Prediction\src\utils.py] line number [44] error message [node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\ML\CarDekho_Car_Price_Prediction\Carprice\lib\site-packages\flask-3.0.0-py3.10.egg\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\ML\CarDekho_Car_Price_Prediction\Carprice\lib\site-packages\flask-3.0.0-py3.10.egg\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\ML\CarDekho_Car_Price_Prediction\Carprice\lib\site-packages\flask-3.0.0-py3.10.egg\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\ML\CarDekho_Car_Price_Prediction\Carprice\lib\site-packages\flask-3.0.0-py3.10.egg\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "E:\ML\CarDekho_Car_Price_Prediction\app.py", line 33, in predict_datapoint
+    pred = predict_pipeline.predict(final_new_data)
+  File "E:\ML\CarDekho_Car_Price_Prediction\src\pipeline\prediction_pipeline.py", line 28, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException:  Error occured in python script name[E:\ML\CarDekho_Car_Price_Prediction\src\pipeline\prediction_pipeline.py] line number [19] error message [ Error occured in python script name[E:\ML\CarDekho_Car_Price_Prediction\src\utils.py] line number [44] error message [node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]]]
+[ 2023-12-03 00:19:26,500 ] 96 werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 00:19:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
