@@ -1,4 +1,4 @@
 Carprice
-dist/
-logs/
-build/
+dist
+logs
+build
