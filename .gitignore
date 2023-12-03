@@ -1,5 +1,4 @@
 Carprice
-Car_Price_prediction.egg-info/
 dist/
-.logs
+logs/
 build/
